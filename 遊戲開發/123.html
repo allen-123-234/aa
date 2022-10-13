@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></mata>
+    <meta name="description" content="林駿沅的網站，內有程式設計相關資訊"/>
+    <meta name="author"  content="林駿沅" />
+    <meta name="keywords" content="林駿沅,html,程式設計相關資料"/>
+    <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+    <title>林駿沅的網頁</title>
+</head>
+<body>
+<!--這個是輸入的內容-->
+<h1>簡介</h1><!--h1最重要，h6最不重要-->
+<ol type="1">
+    <li>家族行事曆</li>
+<li>這是一個行事曆網站，會定時更新</li>
+
+<a href="https://garticphone.com/zh-TW">遊戲</a>      <a href="https://www.python.org/downloads/">python(程式編輯)</a>   
+</ol>
+<h1>行事曆</h1>
+去水南阿祖家(10/15)星期六
+大考考完(10/14)星期五
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!DOCTYPE  html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>留言板練習</title>
+        <script>
+            window.onload = function(){
+                var Input = document.getElementById("myInput");
+                var messageBox = document.getElementById("messageBox");
+            
+            function post(){
+                if(Input.value){
+                    var oTime = document.createElement("div");
+				    oTime.className = "time";
+				    var myDate = new  Date();
+				    oTime.innerHTML = myDate.toLocaleString();
+				    messageBox.appendChild(oTime);
+				
+                    var message = document.createElement("div");
+                    message.className="messageX";
+                    message.innerHTML=Input.value;
+                    Input.value="";
+                    messageBox.appendChild(message);
+                }
+            }
+        }
+        </script>
+        <style>
+
+        </style>
+   
+    </head>
+    <body>
+        <div>
+            <div>使用者留言</div>
+            <textarea id="messageBox"></textarea>
+            <div>
+            <button onclick="post()">提交</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+    
